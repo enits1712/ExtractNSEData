@@ -1,0 +1,362 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Test" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1104,1057.6" sap2010:WorkflowViewState.IdRef="Test_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Get Historical Data from NSE" sap:VirtualizedContainerService.HintSize="1282,2423" sap2010:WorkflowViewState.IdRef="Sequence_10">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="Symbol" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtInputExcel" />
+      <Variable x:TypeArguments="x:Int32" Name="Iteration" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Read InputExcel to DT" sap:VirtualizedContainerService.HintSize="518,227" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_14">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="Input\Input_File.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="InputExcel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="478,252" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,192" sap2010:WorkflowViewState.IdRef="ReadRangeX_2" Range="[InputExcel.Sheet(&quot;Sheet1&quot;)]" SaveTo="[dtInputExcel]" />
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ueab:ExcelProcessScopeX>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtInputExcel]" DisplayName="Download NSE Data for each Company" sap:VirtualizedContainerService.HintSize="518,2009" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentCompany" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="484,1813" sap2010:WorkflowViewState.IdRef="Sequence_12">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,173" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Downloading historical data from NSE&quot;]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <Assign sap:VirtualizedContainerService.HintSize="450,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[Symbol]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[CurrentCompany(0).ToString]</InArgument>
+              </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Assign>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="NSE Site" sap:VirtualizedContainerService.HintSize="450,1466" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="e6c8a685-90a9-4f49-9b6d-985a03b1b3df" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1226" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="FromMonth" />
+                      <Variable x:TypeArguments="x:Boolean" Name="ParseSuccesss" />
+                      <Variable x:TypeArguments="s:DateTime" Name="ParseResult" />
+                      <Variable x:TypeArguments="x:String" Default="[&quot;C:\Users\LENOVO\Documents\UiPath\Extract_FinancialData\Extract_FinancialData\Input\NSE\&quot; + Symbol +&quot;.csv&quot; +&quot;[k(Enter)]&quot;]" Name="SaveLocation" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DelayBefore="2" DisplayName="Click 'Historical Data'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e6c8a685-90a9-4f49-9b6d-985a03b1b3df" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable Accuracy="0.95" BrowserURL="https://www.nseindia.com/get-quotes/equity?symbol=EICHERMOT" CVScreenId="3dd85e04-2962-487f-b2dc-635ad9b7b191" CvTextArea="479, 586, 128, 16" CvTextArgument="Historical Data" CvType="Text" DesignTimeRectangle="276, 399, 103, 17" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Historical Data'" FullSelectorArgument="&lt;webctrl id='historic_data' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl id='historic_data' tag='H2' type='' class='' aaname='Historical Data' check:innerText='Historical Data' /&gt;" Guid="7f48abb1-e0ef-4909-adf2-726a5042e43e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGsAAAAVCAYAAABBlxC9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQMSURBVGhD7Vfvh+NaGL5/X1jCCCUMYUwsG0u4TL9sLFWmX1r3Q4bVYWupXG5cOh9GhqvD6rg6rC5DWBlGxxCGcIkllOe+SU/bk6S/dqbGhDyc6puT8/56znnfk99QojAoySoQSrIKhJKsAuHJZIW3Q7g+E14SoYfhzQ4NP7rouwETXjdSZPm9Kqq9FYm4NiGfDJkQwDkSIJ24TH45BOdVCBUTO7N81YBwPGBCHnFO5H05Pd4b6Jy7CCL20gshRda4q0LtjpmUwYag1mFwLKBxxYTXhg1x5XIShQgeXDgnOmS5irM79nwrDNAQGvT7NDyZrMDtw31kQgwKwvvWR/+yjyHVx2gSPwzgktzWBeifpnOpkjOJMGZrRrch0huV5q6HGP+kf1Sqhtfj6fyyssXpGdJcdsNHPq2PbV+O4IWZ2V8li0NIa6VKA0PycY6fPtx/l8QU+33Zhi7oaCe+pPO31keGJ5OVOi33NrQ9BdXPNhlzYDV1KEc2UbWGrLszVGUZetOCc2mj80GFdGhiFE6nyRtYb1U0mho9N9D6PCRthGxyl+l534GXJNAjHRKU31uwzvtwujWookR+z408i6wYoz8k6L1pTN6fZFvR0eo66J9bqB2KkEh3Ym0lWVv4yJAjS67HCWeJ5ccnfSVZSUBfVgeUK4OTEcyKik6mhIy7GsSPfbYbY7KoL9ZZsDPwyV2lh06kn5xs2v1hJugb6r3vbMw78zPJii6MxXqylbI2cWHua7AfmLyiDG70kWEnZEX/GBAPGnCo/C07wTmyvpuQPji5coUJBfPGgJOcipgsCeb3ZGYBPrmr9GRBZTIM6Jwnw4HBJ+yZZOFrLbc++m9miy5iH/nY1/SsdT4y7KYMEoIfDjp1HaosQqxoqF0s9OTIWpmgaemz7rP/OfBrNySa9ixGJ7QB31IZbbbYqELZIVneqTyfD7+ZFL8KY26rhaqyiawtfGTYGVkpBAO0uOOfe/fegqpQX2HiHKGDqkR9KxG2IGuVnhkeqJcedkgTBzq9tV2RdWdBE3WcJb3Hh/0uX5IH9Q1kbeMjw07ICugmNnrkilFEvYQji999SHpJSOtlaKcjBKy3IPJgH9Gzv2b2tyBrqR4fTpNKcmw7TsQ+fZPN5qhgel80CM8lK759XnWSi83iIhCTJcO8YSIhuu1Ae8OT5aG9z8UU+7WNjww7Icv/akI/iMsf+2iUFRg9Tk9IO4rKoxTPHbanH7QTH4OmCnFPStZIFVrzt8f1n23IImT0iHQr5fWMewYUSur0g5Zulxf2L58sYW+2nkZFhEC3Na1uYfCQ6ZZ0MzUOFu+qxw7s1MmiVJA9mfmqnk4/7Tf6yJAiq8TrRklWgVCSVSCUZBUIJVkFQklWYQD8D8PzFuUitleaAAAAAElFTkSuQmCC" InformativeScreenshot="18423c0c2e875c518dd3323bd8e0bf90.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*NSE India' /&gt;" SearchSteps="Selector, Image" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset X="6" Y="-3" />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="Element 'UL'" Mode="Appears" Retry="True">
+                          <uix:VerifyExecutionOptions.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.nseindia.com/get-quotes/equity?symbol=EICHERMOT" CVScreenId="417d2ee5-4893-4a9f-bbad-abc3dcfcb1a8" CvTextArea="130, 498, 294, 12" CvTextArgument="1D 1W 1M 3M 6M TY" CvType="Text" DesignTimeRectangle="115, 487, 457, 35" DesignTimeScaleFactor="1" ElementType="List" FriendlyName="'UL'" FullSelectorArgument="&lt;webctrl parentid='historical-trade' tag='UL' /&gt;" FuzzyAccuracy="0.73" FuzzySelectorArgument="&lt;webctrl parentid='historical-trade' tag='UL' type='' class='dayslisting' aaname='                                                                                                                                                                                                                                                                                                                       ' /&gt;" Guid="68f6a5e4-9696-4dee-8bd8-da75f06a6597" InformativeScreenshot="787b69432d5f9902bf7f82aa033958a5.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*NSE India' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                          </uix:VerifyExecutionOptions.Target>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <ui:CommentOut DisplayName="Try filtering out in the NSE calendar" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,856" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click FromDate" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e6c8a685-90a9-4f49-9b6d-985a03b1b3df" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.nseindia.com/get-quotes/equity?symbol=EICHERMOT" DesignTimeRectangle="886, 676, 272, 50" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'24-12-2024'" FullSelectorArgument="&lt;webctrl id='startDate1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='startDate1' tag='INPUT' type='' class='startDate-block-deals dtpicker form-control' aaname='' /&gt;" Guid="4f70855f-73b1-465b-8e62-b3bb8bd1d92d" InformativeScreenshot="35ddb9dc7d353019fb7ebaff126536ad.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Eicher Motors Limited Share Price Today, Stock Price, Live NSE News, Quotes, Tips – NSE India' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <uix:NGetText DisplayName="Get From Month Displayed" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="e6c8a685-90a9-4f49-9b6d-985a03b1b3df" TextString="[FromMonth]" Version="V3">
+                            <uix:NGetText.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.nseindia.com/get-quotes/equity?symbol=EICHERMOT" CVScreenId="16dd26c4-c7f9-43da-a341-1318f34f5710" CvTextArea="964, 541, 136, 17" CvType="AnyWordGroup" DesignTimeRectangle="929, 533, 205, 38" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'December 2024'" FullSelectorArgument="&lt;webctrl aria-role='button' tag='DIV' aaname='December 2024' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='button' tag='DIV' type='' class='' /&gt;" Guid="e9cec44c-aa19-4562-9ca3-8942a04d7553" ImageBase64="" InformativeScreenshot="7e435ada5c02679ffaeacba70f1e6373.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*NSE India' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                            </uix:NGetText.Target>
+                          </uix:NGetText>
+                          <ui:InvokeCode ContinueOnError="{x:Null}" Code="isParsed = DateTime.TryParseExact(&#xA;    FromMonth.Trim(),&#xA;    &quot;MMMM yyyy&quot;, ' Adjust format if needed (e.g., &quot;MMM yyyy&quot;)&#xA;    System.Globalization.CultureInfo.InvariantCulture,&#xA;    System.Globalization.DateTimeStyles.None,&#xA;    parsedDate&#xA;)&#xA;&#xA;' If parsing fails, explicitly set parsedDate to a default (optional)&#xA;If Not isParsed Then&#xA;    parsedDate = DateTime.MinValue&#xA;End If" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="387.2,164.8" sap2010:WorkflowViewState.IdRef="InvokeCode_2">
+                            <ui:InvokeCode.Arguments>
+                              <OutArgument x:TypeArguments="x:Boolean" x:Key="isParsed">[ParseSuccesss]</OutArgument>
+                              <OutArgument x:TypeArguments="s:DateTime" x:Key="parsedDate">[ParseResult]</OutArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="FromMonth">[FromMonth]</InArgument>
+                            </ui:InvokeCode.Arguments>
+                          </ui:InvokeCode>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,144" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[ParseResult.Month = DateTime.Now.Month AndAlso ParseResult.Year = DateTime.Now.Year]" />
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:CommentOut>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '3M'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e6c8a685-90a9-4f49-9b6d-985a03b1b3df" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.nseindia.com/get-quotes/equity?symbol=EICHERMOT" CVScreenId="ed291eb2-3ce0-4145-9bb1-57221c8b18bd" CvElementArea="278, 571, 54, 33" CvTextArea="294, 582, 21, 12" CvTextArgument="3M" CvType="Button" DesignTimeRectangle="281, 574, 50, 29" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'3M'" FullSelectorArgument="&lt;webctrl id='threeM' tag='A' /&gt;" FuzzyAccuracy="0.98" FuzzySelectorArgument="&lt;webctrl id='threeM' tag='A' type='' class='' aaname='3M' check:innerText='3M' /&gt;" Guid="228b350b-4aa3-4077-92f4-c0a721314707" ImageBase64="" InformativeScreenshot="0bfb4153d1ee57662c81207f058a8f0a.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*NSE India' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Visible">
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset X="-2" Y="-3" />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="Label '3M'" Mode="Appears" Retry="True">
+                          <uix:VerifyExecutionOptions.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.nseindia.com/get-quotes/equity?symbol=EICHERMOT" CVScreenId="aa0e39e3-e328-430d-a103-49a051380dd5" CvElementArea="278, 529, 53, 33" CvTextArea="293, 539, 23, 12" CvTextArgument="3M" CvType="Button" DesignTimeRectangle="280, 531, 50, 29" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'3M'" FullSelectorArgument="&lt;webctrl id='threeM' tag='A' class='active' /&gt;" FuzzySelectorArgument="&lt;webctrl id='threeM' tag='A' class='active' type='' aaname='3M' check:text='3M' /&gt;" Guid="7a8b12f1-2201-4bc5-8e6a-33036caa71e9" InformativeScreenshot="128b6c5ddb638c4985bb03038a253bdc.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*NSE India' /&gt;" SearchSteps="Selector, CV" Version="V2" Visibility="Interactive" />
+                          </uix:VerifyExecutionOptions.Target>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DisplayName="Click 'Download (.csv)'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e6c8a685-90a9-4f49-9b6d-985a03b1b3df" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.nseindia.com/get-quotes/equity?symbol=EICHERMOT" CVScreenId="053b4b18-0ac3-4e02-a6c6-ddcf0e73c5f7" CvTextArea="1167, 420, 101, 17" CvTextArgument="Download*" CvType="Text" DesignTimeRectangle="1168, 636, 101, 21" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Download (.csv)'" FullSelectorArgument="&lt;webctrl id='dwldcsv' tag='SPAN' /&gt;" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;webctrl id='dwldcsv' tag='SPAN' type='' class='' aaname='Download8' check:innerText='Download*' /&gt;" Guid="a2c3a48e-208b-4c47-8845-ff28c349f8f5" ImageBase64="" InformativeScreenshot="1e88c76ed17c4cd7f0adee0394622b31.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*NSE India' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="Label 'Save as'" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Target>
+                            <uix:TargetAnchorable Accuracy="0.93" CVScreenId="998d50d5-4d1b-4a37-a1e1-015e1df5b999" CvElementArea="182, 84, 159, 34" CvType="InputBox" DesignTimeRectangle="217, 90, 50, 23" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Save as'" FullSelectorArgument="&lt;ctrl name='Downloads' role='document' /&gt;&lt;ctrl name='Recent downloads' role='list' /&gt;&lt;ctrl name='What do you want to do*' role='list item' /&gt;&lt;ctrl name='Save as More options' role='menu button' /&gt;&lt;ctrl name='Save as' role='push button' /&gt;&lt;ctrl name='Save as' role='text' /&gt;" FuzzyAccuracy="0.81" FuzzySelectorArgument="&lt;ctrl name='Downloads' role='document' /&gt;&lt;ctrl name='Recent downloads' role='list' /&gt;&lt;ctrl name='What do you want to do*' role='list item' /&gt;&lt;ctrl name='Save as More options' role='menu button' /&gt;&lt;ctrl name='Save as' role='push button' /&gt;&lt;ctrl name='Save as' role='text' automationid='' check:fulltext='Save as' /&gt;" Guid="1a74469a-c2a7-4897-bd7e-aeccbf449f77" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADIAAAAXCAYAAABJXhw0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFYSURBVFhH7ZOxkYQwDEWvHxrYBqAAcgogpgpicoogJoYeiEmpwTePmc8ILfgu9O4QvFkLyZK+pf3Zti18A4+Q1HiEpMYjJDXehHRdF7IsO8D2MSlyEtI0zY7sdV1D3/eHnTKHEJquqioMw/AW9AlEJ+LxayfR3PEraL8tyxKKovjXut7V8D7ykVe+kxBNxSeQr23b/RebpMRiE6szvmmaQlmWeyGJUD5sfMQot4jVsDnxzfN8L0SouFdt8c3a5mhAk/Ui5QfZd9ganPM8P2p4LoUI+yLYNKXR+vGqOWLruj6JsnfE3QrHapDz9Xrt3zVhERViX8S/rPXJRsA4jvuvFR/731n+qiGw7brCIYTLdj/BToSzbQjbvhYxCAB8irsqekesBveVg1r0dSkESGLHal9HDclHw/61vDhhVwI4883GQKyGz2EfC6Kr9Uk8QlLjEZIaXyJkC7++PvoAQrf7NQAAAABJRU5ErkJggg==" InformativeScreenshot="45d5ae01978f0d8529a22255fbb62ea0.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' idx='*' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target Accuracy="0.91" CVScreenId="998d50d5-4d1b-4a37-a1e1-015e1df5b999" CvElementArea="182, 84, 159, 34" CvType="InputBox" DesignTimeRectangle="183, 86, 119, 32" ElementType="Button" FriendlyName="'Save as'" FullSelectorArgument="&lt;wnd aaname='Downloads' cls='Chrome_RenderWidgetHostHWND' title='Chrome Legacy Window' /&gt;&lt;ctrl name='Downloads' role='document' /&gt;&lt;ctrl name='Recent downloads' role='list' /&gt;&lt;ctrl name='What do you want to do with Quote-Equity-EICHERMOT-EQ-27-10-2024*' role='list item' /&gt;&lt;ctrl name='Save as More options' role='menu button' /&gt;&lt;ctrl name='Save as' role='push button' /&gt;" FuzzyAccuracy="0.89" FuzzySelectorArgument="&lt;wnd aaname='Downloads' cls='Chrome_RenderWidgetHostHWND' title='Chrome Legacy Window' /&gt;&lt;ctrl name='Downloads' role='document' /&gt;&lt;ctrl name='Recent downloads' role='list' /&gt;&lt;ctrl name='What do you want to do*' role='list item' /&gt;&lt;ctrl name='Save as More options' role='menu button' /&gt;&lt;ctrl name='Save as' role='push button' automationid='' check:fulltext='Save as' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHsAAAAkCAYAAACpH0VdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG+SURBVHhe7Zs9roJAFIXfftiAG4AF2LMAalZhTc8irKllD9a2dPbzckgOuU5w1GgxcM8kX+Ry58fwzR1s/AtqbppkO2qL7Pv9HqZpEjtmkb2WFPtCsh0h2Y6QbEdItiMk2xGS7QjJdoRkO0KyHZG97K7rQlEUC4jX+onXZC27bdsZxrfbLfR9/9BHvE+2siG2rutwPp9X8+JzNlXZMfERz42BMfFxb+9dr9dQVdVbr4Zna8Q5zId57djcyFo2qzt+yMydTqf5EzEePPoiRl9eI3e5XMLxeJxlUDTnQ4wc+nBuklrDzoncOI6S/QsoKFU9sVArEJJ4QsQbgXnA+Bl2DVyXZbmssQU2IZvYykIMcTxG46OUAtG3aZoH8XYMefa6SK2BOQ+Hw3yfJ0XObEq2ray4Qm2OMSQPwzB/2g2S+h1gebUGQWxfDbmSrWw8YPu+BLaycW2lIbZVhz6QDJBjv0/EpNbAeM6BtfC9JPsL8KDtEWqrjNKYg9S46uINQOzxC3CNe7YPSK0Rz2E3VK5s6hgX3yHZjpBsR0i2IyTbEZLtCMl2hGQ7QrIdIdmOWGTrL7v7Z5Gttv8m2W5aCP9qXcOlYiR7GwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:VerifyExecutionOptions.Target>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DelayBefore="1" DisplayName="Click 'Save As'" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e6c8a685-90a9-4f49-9b6d-985a03b1b3df" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable Accuracy="0.9" DesignTimeRectangle="197, 158, 84, 27" DesignTimeScaleFactor="1.25" FriendlyName="'msedge.exe'" Guid="577eb796-1486-4b6a-b1bd-76d151ba9c7e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAAbCAYAAADiZah4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAQCSURBVGhD7ZZfa9tIFMX3YwmCXgSLYIkINQsiYAoRS02IWWpCUSgOix9WfihL9FBUgpeiEFSC/JCA8VK8BIWgYhABERAYf5qzd0Z/LCnadRemL6kefgjN3BmNztw5d35Yr9doEUcrqGBaQQXTCiqYVlDBtIIKphVUMK2gghEuaDxzMNhXIEkSR9k34d0njbHPEaGCxlcDKCSi+nIE59KD98FC7wUTVod91zzmuSFQ0BD2Pol36CIut68C2C81GO8Xpdjni0BBfZiUnZ0/goa+7weBgkaYHFCG7g5xHTf1b4hnNvp7cuazMrQjG/NsjH9MbaqFRW3MeumgS/H9i8yP4zmcYx3KDptDgrxnwJrG1TE1knsPZt3fl9WY6JMJXUn7JVlD/2xePXFbEFuU7mzofLEquic23JsAyaoak0xN7rP6qY8gihDe2DDYDxy5SFjMzRAyiTycVccFY41+kDaLzbeaY6TSmD0Tk88hoiiA94b6JQXm9F8K4H26NuXIweJLhOiWxN2jOXYtBHnMrQWN5uh/WCCktQXTIfSd/5izAbGCMh6qmSPtdGB+ior+iAQ0x35l18OzDsUO4PP3BSwSS357XfSv1wGsXQnaOLUTLq7Ug1s5CTHcQ/pe10FUtG1I7lyMTiYIyhtMRVSSOrDv03e+jh9HmOf9jFpCbEO8oAUJos+TNAto1+sZV4H/GN0EvqTvlWxk/TOWtV04/Hhmxe+1txmfEZ0bpY35CihrO7Tp5jR75xlKt5RXFj9d8WMp9iv5hoJmrK4xlEmAN37WliCc2hgd6lB/UqHmflXKlNwvB1fp+/Vb8tsi80jQn/MxTRiYRNk8NeK/J7BeG+iw76q5h2++w2Nq9+jOiYfof2SpWEEbP5wJcJwKOj9li9XQGzvw6K7qMw/82Ke2kqBU4JwujWG+uvIxoB8rilE+368ueSd54RPiJ77NSLNXSb2d3ZEpA6O/LJ6hZUELVgmCS5NnrHG+saxtCBM0vjKhkl++u60ZeOxhQBma+l/z1WrxO/PEsqDkeRdM5D4m5/QsH39ifkrZRcVkURMuvnFgT8O0uFVoton4okffKAmaUCFaltefbV5xurYjLkMfSSxWefMKT1ngnpnosjaFfI0XkCzzlD6crDr7YwMq/VRd0PWjiz5rp+KWF6OC5QQGtSu/WPCKeXp8Hv2s+R7MbYN8ejilzIxCLP6k7MsKZy4oPz0Ku37lMQOeoZvTsR2xRz4J4f1mQGOeyUWiO+aBBf+hFLMs3wVl6MdUeS+r1TYnFeFpO+fBh3WgUbHKvqXoMC+bsjOD7q320SZeZeuavase+VXMN7hYv7xlzga+fVH6zmgFFUwrqGBaQQXTCiqYVlChrPEPoc74EqSDTwcAAAAASUVORK5CYII=" InformativeScreenshot="db8bfb26259147d028f9de5e2c32adf8.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' idx='*' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset X="-6" />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="2" DisplayName="SavePath" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,243" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="HardwareEvents" ScopeIdentifier="e6c8a685-90a9-4f49-9b6d-985a03b1b3df" Text="[SaveLocation]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable CVScreenId="1eb94168-98f0-4be4-8de1-a2a5d9a9784e" CvElementArea="167, 401, 778, 28" CvType="InputBox" DesignTimeRectangle="169, 405, 752, 22" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Quote-Equity-EICHERMOT-…'" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="669e9162-de47-4ad3-9306-8ed680e28ae3" InformativeScreenshot="1b97645b447ee73a25aa99c9ed512c21.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="1eb94168-98f0-4be4-8de1-a2a5d9a9784e" CvElementArea="694, 535, 110, 33" CvTextArea="731, 545, 33, 13" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="695, 537, 110, 33" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' check:text='unchecked' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Edge" IconBase64="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" InformativeScreenshot="c2f3a88ee392ca4bf2812557b9bb0b1c.jpg" Selector="&lt;html app='msedge.exe' url='https://www.nseindia.com/get-quotes/equity?symbol=*' /&gt;" Title="NSE - National Stock Exchange of India Ltd: Live Share/Stock Market News &amp; Updates, Quotes- Nseindia.com" Url="[&quot;https://www.nseindia.com/get-quotes/equity?symbol=&quot; + Symbol]" />
+              </uix:NApplicationCard.TargetApp>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="518,164" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Historical data from NSE downloaded.&quot;]" />
+  </Sequence>
+</Activity>
